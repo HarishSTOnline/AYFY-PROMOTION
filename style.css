@@ -591,6 +591,11 @@ ul.smedia {
     margin: 20px 0;
 }
 
+ul.smedia2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
 .lbox_cont img {
     width: 80%;
 }
@@ -707,6 +712,15 @@ font-family: 'Arial Bold Italic';
   opacity: .5;
 }
 
+.smedia2 li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.smedia2 li a:hover {
+  opacity: .5;
+}
+
 .faceb{
   width: 33px;
   height: 33px;
@@ -726,7 +740,6 @@ font-family: 'Arial Bold Italic';
 }
 
 .launch span{
-  padding-top: 10px;
   display: inline-block;
   font-family: 'Arial Regular';
   font-size: 18px;
@@ -1134,7 +1147,7 @@ padding: 0 10px;
     height: 100%;
     left: -370px;
   }
-
+}
   @media only screen and (max-width:1366px) and (max-height: 768px) {
   .mbox:before {
     width: 39%;
@@ -1243,6 +1256,12 @@ display: none !important
   }
 
 }
+  @media only screen and (max-width:375px) and (min-height:812px) {
+    .mainn {
+    top: 58% !important;
+}
+}
+
  @media screen and (max-width:1023px) {
  }
  @media screen and (max-width:995px) {
@@ -1323,6 +1342,29 @@ body {
 .sitmpee .sub-menu li a:hover {  background-position: 0 1px !important;}
  .sitmpee li a {font-size: 16px;background-position: 0 2px;}
  .sitmpee li a:hover {font-size: 16px;background-position: 0 2px;}
+}
+
+
+@media only screen and (max-width: 823px){
+.mainn {
+    top: 119%;
+}
+.mbox {
+    width: 87%;
+}
+}
+@media only screen and (max-width: 812px){
+.mainn {
+    top: 46%;
+}
+.mbox {
+    width: 86%;
+}
+.mbox:before {
+    width: 85%;
+    top: 0;
+    left: -221px;
+}
 }
  @media only screen and (max-width:767px) {
 
@@ -1406,11 +1448,37 @@ body {
 }
 
 
+@media only screen and (min-width:479px) {
+    ul.smedia {
+    display :none ;
+}
+}
+
  @media only screen and (max-width:479px) {
+    .launch {
+    margin-bottom: 4px;
+}
+ul.smedia {
+    display: none;
+}
+
+ul.smedia {
+    display :block ;
+}
+.rbox:before {
+    bottom: -3px;
+    font-size: 16px;
+}
+.rbox {
+    padding: 25px 0;
+}
 .mainn {
-    top: 68%;
+    top: 58%;
     left: 25px;
     right: 25px;
+}
+.launch span {
+    line-height: 22px;
 }
 .rbox form li input[type="text"], .rbox form li input[type="tel"], .rbox form li input[type="email"], input[type="password"] {
     width: 283px;
@@ -1477,7 +1545,16 @@ h2, h2, h3, h4, h5, h6 {
 @media only screen and (max-width:375px) {
 
 .mainn {
-    top: 75%;
+    top: 65%;
+    left: 15px;
+    right: 15px;
+}
+}
+
+@media only screen and (max-width:360px) {
+
+.mainn {
+    top: 67%;
     left: 15px;
     right: 15px;
 }
@@ -1486,7 +1563,7 @@ h2, h2, h3, h4, h5, h6 {
 @media only screen and (max-width:320px) {
 
 .mainn {
-    top: 91%;
+    top: 76%;
     left: 0px;
     right: 0px;
 }
